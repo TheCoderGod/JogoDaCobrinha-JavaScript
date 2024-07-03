@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #191919;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    
+}
+
+canvas {
+    background-color: #000;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.valor--score{
+    font-weight: 700;
+    font-size: 4.5rem;
+    display: block;
+    margin-top: -10px;
+}
+
+.tela--menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    top: 50%; /* Posiciona no centro vertical */
+    left: 50%; /* Posiciona no centro horizontal */
+    transform: translate(-50%, -50%); /* Corrige o centro */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.game-over {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem; /* Reduzir o tamanho da fonte */
+    margin-bottom: 10px; /* Espaço abaixo */
+}
+
+.score--final {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 20px; /* Espaço abaixo */
+}
+
+.btn--jogar {
+    border: none;
+    border-radius: 100px;
+    padding: 10px 15px 10px 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.5rem;
+}
